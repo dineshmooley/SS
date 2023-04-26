@@ -2,13 +2,14 @@
   <head>
     <title>SurveySparrow</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
   </head>
   
   <body>
-    <form>
+    <form onsubmit="return verify()">
       <div class="inp">
         <label for="fname">Enter your first name</label>
-        <input type="text" id="fname" placeholder="e.g. Aravind">
+        <input type="text" id="fname" name="fname" placeholder="e.g. Aravind">
       </div>
 
       <div class="inp">
@@ -22,7 +23,7 @@
       </div>
      
       <div class="inp">
-        <label for="dpb">Enter your Date of Birth</label>
+        <label for="dob">Enter your Date of Birth</label>
         <input type="date" id="dob" placeholder="e.g. Aravind">
       </div>
 
@@ -59,6 +60,7 @@
       <div class="inp">
         <label for="inle">Enter your Income level</label>
         <select id="inle">
+            <option value="0">0</option>
             <option value="1k-10k">1,000 to 10,000</option>
             <option value="10k-100k">10,000 to 1,00,000</option>
             <option value="100k+">1,00,000+</option>
@@ -110,40 +112,40 @@
 
       <div class="inp">
         <label id="rad">Enter your mental issues</label><br>
-        <input type="radio" name="meniss" id="dep" value="depression">
+        <input type="checkbox" id="dep" value="depression">
         <label for="dep">Depression</label>
 
-        <input type="radio" name="meniss" id="andi" value="anxiety disorder">
+        <input type="checkbox" id="andi" value="anxiety disorder">
         <label for="andi">Anxiety Disorder</label>
 
-        <input type="radio" name="meniss" id="schi" value="schizopheria">
+        <input type="checkbox" id="schi" value="schizopheria">
         <label for="schi">Schizopheria</label>
 
-        <input type="radio" name="meniss" id="eatdis" value="eating disorder">
+        <input type="checkbox" id="eatdis" value="eating disorder">
         <label for="eatdis">Eating Disorder</label>
 
-        <input type="radio" name="meniss" id="adbe" value="addictive behaviors">
+        <input type="checkbox" id="adbe" value="addictive behaviors">
         <label for="adbe">Addictive Behaviors</label>
         
-        <input type="radio" name="meniss" id="not" value="nothing">
+        <input type="checkbox" id="not" value="nothing">
         <label for="not">Nothing</label>
       </div>
 
       <div class="inp">
         <label id="rad">Enter your physical issues</label><br>
-        <input type="radio" name="phyiss" id="deaf" value="deaf">
+        <input type="checkbox" id="deaf" value="deaf">
         <label for="deaf">Deaf</label>
 
-        <input type="radio" name="phyiss" id="blin" value="blind">
+        <input type="checkbox" id="blin" value="blind">
         <label for="blin">Blind</label>
 
-        <input type="radio" name="phyiss" id="dys" value="dysarthia">
+        <input type="checkbox" id="dys" value="dysarthia">
         <label for="dys">Dysarthia</label><br>
 
-        <input type="radio" name="phyiss" id="mislim" value="missing limbs">
+        <input type="checkbox" id="mislim" value="missing limbs">
         <label for="mislim">Missing Limbs</label>
 
-        <input type="radio" name="phyiss" id="oth" value="other">
+        <input type="checkbox" id="oth" value="other">
         <label for="oth">Other</label>
       </div>
 
@@ -203,10 +205,9 @@
       </div>
 
       <div class="btn">
-        <button onClick="verify()">Submit</button>
+        <input type="submit" value="Submit">
       </div>
-      
-      <div id="err"></div>
+    
     </form>
   </body>
 </html>
