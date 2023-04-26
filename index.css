@@ -6,8 +6,9 @@
   }
   
   .inp  {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     padding: 2px;
+    
   }
   
   .inp textarea {
@@ -18,7 +19,7 @@
   
   form {
     margin: 0 auto;
-    width: 250px;
+    width: 400px;
   }
   
   .btn {
@@ -32,5 +33,10 @@
     display: inline;
  }
 
+ input[type = checkbox] {
+  display: inline;
+ }
+
+ 
  
  
