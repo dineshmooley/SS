@@ -1,0 +1,36 @@
+.inp input {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .inp  {
+    margin-bottom: 20px;
+    padding: 2px;
+  }
+  
+  .inp textarea {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid grey;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 250px;
+  }
+  
+  .btn {
+    margin: 0;
+    padding-left: 90px;
+    position: absolute;
+  
+  }
+
+  input[type=radio] {
+    display: inline;
+ }
+
+ 
+ 
